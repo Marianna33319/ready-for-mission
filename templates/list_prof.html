@@ -1,0 +1,18 @@
+{% extends "base.html"%}
+
+{% block content%}
+<h2 align="center">Список профессий</h2>
+{%if mrk=='ol' %}
+<ol>
+  {% for prof in profession%}
+  <li>{{prof}}</li>
+  {% endfor%}
+</ol>
+{%elif mrk=='ul'%}
+<ul>
+  {% for prof in profession%}
+  <li>{{prof}}</li>
+  {% endfor%}
+</ul>
+{%endif%}
+{%endblock%}
